@@ -1,3 +1,4 @@
+/* eslint-disable react/static-property-placement */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Keyboard, ActivityIndicator } from 'react-native';
@@ -84,7 +85,7 @@ export default class Main extends Component {
 
   handleNavigate = user => {
     const { navigation } = this.props;
-    navigation.navigate('User'), { user };
+    navigation.navigate('User', { user });
   };
 
   render() {
